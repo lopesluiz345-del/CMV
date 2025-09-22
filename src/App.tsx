@@ -22,7 +22,7 @@ interface ProdutoCMV {
 }
 
 function App() {
-  const produtosSalvos = JSON.parse(localStorage.getItem("produto") || "");
+  const produtosSalvos = JSON.parse(localStorage.getItem("produto") || "[]");
   const [produto, setProduto] = useState<string>("");
   const [valorEstoqueInicial, setValorEstoqueInicial] = useState<number>(0);
   const [valorCompra, setValorCompra] = useState<number>(0);
